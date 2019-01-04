@@ -20,7 +20,9 @@ TestCase	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c	module:Active
 The change you wanted was rejected.	public/422.html	/^      <h1>The change you wanted was rejected.<\/h1>$/;"	h
 The page you were looking for doesn't exist.	public/404.html	/^      <h1>The page you were looking for doesn't exist.<\/h1>$/;"	h
 We're sorry, but something went wrong.	public/500.html	/^      <h1>We're sorry, but something went wrong.<\/h1>$/;"	h
+WelcomeController	app/controllers/welcome_controller.rb	/^class WelcomeController < ApplicationController$/;"	c
 dependencies	package.json	/^  "dependencies": {}$/;"	o
+index	app/controllers/welcome_controller.rb	/^  def index$/;"	f	class:WelcomeController
 name	package.json	/^  "name": "operability_of_software",$/;"	s
 private	package.json	/^  "private": true,$/;"	b
 system!	bin/setup	/^def system!(*args)$/;"	f
