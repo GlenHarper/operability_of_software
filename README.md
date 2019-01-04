@@ -34,9 +34,27 @@ Can you see how many times the error has occured?
 
 #### NewRelic
 
-Add NewRelic to your application. [Click here for documentation.](https://elements.heroku.com/addons/newrelic)
+Add NewRelic to your application.
 
-TBD
+```
+heroku addons:create newrelic
+heroku restart
+```
+
+Reload the front page of your app a few times. Then open NewRelic by running
+`heroku addons:open newrelic`.
+
+You should see a list of applications, click on `production`. This shows you
+a lot of information, have a look around.
+
+Can you see the error rate of the application?
+Can you see the average response time?
+Can you see the requests per minute?
+Can you see the CPU and memory usage of the server?
+
+Alerts are sadly not available in the free version of NewRelic, but we could
+create alerts around these metrics hitting certain thresholds. Click the
+"alerts" in the top menu to see more information.
 
 #### Papertrail
 
