@@ -58,7 +58,24 @@ create alerts around these metrics hitting certain thresholds. Click the
 
 #### Papertrail
 
-Add Papertrail to your application. [Click here for documention.](https://elements.heroku.com/addons/papertrail)
+Add Papertrail to your application by running `heroku addons:create papertrail`.
+
+It will take five minutes or so until logs start appearing in Papertrail.
+
+Once a little while as passed, you can view Papertrail logs by running
+`heroku addons:open papertrail`.
+
+The log file is mostly a list of HTTP requests coming in, each request triggers
+some stuff being added to the log file. Reload the page and see the information
+being added to the log file.
+
+Have a read through a part of the file and see what information is there.
 
 There is some debugging information about the error in the logs, can you find
 it? It should tell you the chance of the front page raising an error.
+Can you see the name of the controller being accessed one the root path?
+Can you see the name of the view being rendered?
+Can you see the HTTP code being returned?
+
+Note: you can always use the default Heroku method to view logs by running
+`heroku logs`.
