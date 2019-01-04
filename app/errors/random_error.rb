@@ -1,0 +1,2 @@
+class RandomError < StandardError
+end
