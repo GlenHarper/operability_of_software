@@ -15,9 +15,22 @@ This is a demo application for learning about operability of software.
 
 #### Sentry
 
-Add Sentry to your application. [Click here for documention.](https://devcenter.heroku.com/articles/sentry)
+Add Sentry to your application.
 
-Can you see the error in your application? What is the name of the exception?
+In the `operability_of_software` folder run: `heroku addons:create sentry`
+
+You should get an email with a link to confirm your email, click that.
+
+To open Sentry, run: `heroku addons:open sentry`
+
+Can you see the error in your application?
+What is the name of the exception?
+What is the message accompanied with the exception?
+What is the IP of the user who triggered the exception?
+Can you see what browser and OS they (you) are using?
+Can you see the filename and line number where the error occured?
+Can you view the stack trace for the error?
+Can you see how many times the error has occured?
 
 #### NewRelic
 
